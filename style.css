@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 4px solid #e8491d;
+}
+
+header a {
+    color: #e8491d;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header #branding {
+    text-align: center;
+}
+
+header #branding h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-card .profile-info {
+    flex: 1;
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photo-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav {
+        text-align: center;
+    }
+    
+    header ul {
+        flex-direction: column;
+    }
+    
+    header li {
+        margin: 10px 0;
+    }
+    
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-card img {
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header #branding h1 {
+        font-size: 24px;
+    }
+    
+    header a {
+        font-size: 14px;
+    }
+}
